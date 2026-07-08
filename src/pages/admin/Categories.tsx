@@ -65,7 +65,7 @@ export function AdminCategories() {
           onChange={(e) => setNewName(e.target.value)}
           placeholder="New category name"
           required
-          className="flex-1 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+          className="flex-1 rounded-md border border-stone-300 bg-white px-3 py-2 text-base text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
         />
         <button type="submit" className={primaryButton}>
           Add
@@ -81,7 +81,7 @@ export function AdminCategories() {
               <input
                 value={editingName}
                 onChange={(e) => setEditingName(e.target.value)}
-                className="flex-1 rounded-md border border-stone-300 px-2 py-1 text-sm text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+                className="flex-1 rounded-md border border-stone-300 px-2 py-1 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
               />
             ) : (
               <span className="text-sm text-stone-700">{c.name}</span>

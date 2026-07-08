@@ -3,7 +3,7 @@ export const pageHeading = 'font-serif text-xl font-semibold tracking-tight text
 export const label = 'text-sm font-medium text-stone-600';
 
 export const input =
-  'mt-1 w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900';
+  'mt-1 w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-base text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm';
 
 export const primaryButton =
   'rounded-sm bg-stone-900 px-6 py-2.5 text-xs font-medium uppercase tracking-wider text-white transition hover:bg-brand-700 disabled:opacity-50';

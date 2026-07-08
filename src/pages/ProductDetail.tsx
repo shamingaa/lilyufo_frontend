@@ -106,7 +106,7 @@ export function ProductDetail() {
               onChange={(e) =>
                 setQuantity(Math.max(1, Math.min(selectedVariant.stock, Number(e.target.value))))
               }
-              className="w-20 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+              className="w-20 rounded-md border border-stone-300 bg-white px-3 py-2 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
             />
             <button onClick={handleAddToCart} className={primaryButton}>
               Add to cart

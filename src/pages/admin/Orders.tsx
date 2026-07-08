@@ -56,7 +56,7 @@ export function AdminOrders() {
                 <select
                   value={order.status}
                   onChange={(e) => handleStatusChange(order.id, e.target.value as OrderStatus)}
-                  className="rounded-md border border-stone-300 px-2 py-1 text-xs text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+                  className="rounded-md border border-stone-300 px-2 py-1 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-xs"
                 >
                   {STATUSES.map((s) => (
                     <option key={s} value={s}>

@@ -15,7 +15,7 @@ export function CurrencyInput({ value, onChange, required, id }: CurrencyInputPr
 
   return (
     <div className="mt-1 flex items-center rounded-md border border-stone-300 bg-white shadow-sm focus-within:border-stone-900 focus-within:ring-1 focus-within:ring-stone-900">
-      <span className="pl-3 text-sm text-stone-500">₦</span>
+      <span className="pl-3 text-base text-stone-500 sm:text-sm">₦</span>
       <input
         id={id}
         type="text"
@@ -23,7 +23,7 @@ export function CurrencyInput({ value, onChange, required, id }: CurrencyInputPr
         required={required}
         value={formatWithCommas(value)}
         onChange={handleChange}
-        className="w-full min-w-0 rounded-md bg-transparent px-2 py-2 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none"
+        className="w-full min-w-0 rounded-md bg-transparent px-2 py-2 text-base text-stone-800 placeholder:text-stone-400 focus:outline-none sm:text-sm"
       />
     </div>
   );

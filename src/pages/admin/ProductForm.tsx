@@ -143,7 +143,7 @@ export function AdminProductForm() {
                     value={variant.size}
                     onChange={(e) => updateVariant(index, 'size', e.target.value)}
                     placeholder="M"
-                    className="mt-1 w-full rounded-md border border-stone-300 bg-white px-2 py-2 text-sm text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+                    className="mt-1 w-full rounded-md border border-stone-300 bg-white px-2 py-2 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
                   />
                 </div>
                 <div className="flex-1">
@@ -162,7 +162,7 @@ export function AdminProductForm() {
                     min="0"
                     value={variant.stock}
                     onChange={(e) => updateVariant(index, 'stock', e.target.value)}
-                    className="mt-1 w-full rounded-md border border-stone-300 bg-white px-2 py-2 text-sm text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900"
+                    className="mt-1 w-full rounded-md border border-stone-300 bg-white px-2 py-2 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
                   />
                 </div>
                 <button

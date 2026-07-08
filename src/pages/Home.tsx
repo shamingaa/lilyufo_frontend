@@ -58,7 +58,7 @@ export function Home() {
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             placeholder="Search products..."
-            className="w-full rounded-md border border-stone-300 bg-white px-4 py-2 text-sm text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:w-64"
+            className="w-full rounded-md border border-stone-300 bg-white px-4 py-2 text-base text-stone-800 shadow-sm placeholder:text-stone-400 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:w-64 sm:text-sm"
           />
           <button type="submit" className={primaryButton}>
             Search

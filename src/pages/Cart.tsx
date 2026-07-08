@@ -60,7 +60,7 @@ export function Cart() {
               max={item.stock}
               value={item.quantity}
               onChange={(e) => updateQuantity(item.variantId, Number(e.target.value))}
-              className="w-12 rounded-md border border-stone-300 px-2 py-1 text-sm text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:w-16"
+              className="w-12 rounded-md border border-stone-300 px-2 py-1 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:w-16 sm:text-sm"
             />
             <p className="w-20 text-right text-sm font-medium text-stone-800 sm:w-28">
               {formatCurrency(item.price * item.quantity)}
