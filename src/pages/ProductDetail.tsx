@@ -4,6 +4,7 @@ import { fetchProduct } from '../api/endpoints';
 import type { Product } from '../types';
 import { useCart } from '../context/CartContext';
 import { pill, primaryButton } from '../styles';
+import { QuantityInput } from '../components/QuantityInput';
 import { formatCurrency } from '../utils/currency';
 
 export function ProductDetail() {
@@ -98,14 +99,10 @@ export function ProductDetail() {
 
         {!outOfStock && (
           <div className="mt-6 flex items-center gap-3">
-            <input
-              type="number"
-              min={1}
-              max={selectedVariant.stock}
+            <QuantityInput
               value={quantity}
-              onChange={(e) =>
-                setQuantity(Math.max(1, Math.min(selectedVariant.stock, Number(e.target.value))))
-              }
+              max={selectedVariant.stock}
+              onCommit={setQuantity}
               className="w-20 rounded-md border border-stone-300 bg-white px-3 py-2 text-base text-stone-800 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900 sm:text-sm"
             />
             <button onClick={handleAddToCart} className={primaryButton}>
