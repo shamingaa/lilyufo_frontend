@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  /* Muted rosewood accent — used sparingly, not as a page-wide color */
+  --color-brand-50: #f8f3f2;
+  --color-brand-100: #ede1df;
+  --color-brand-200: #d9c1bd;
+  --color-brand-300: #c29892;
+  --color-brand-400: #a66e66;
+  --color-brand-500: #8a4f47;
+  --color-brand-600: #723d37;
+  --color-brand-700: #5c302b;
+  --color-brand-800: #452421;
+  --color-brand-900: #2f1817;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-stone-50);
+  color: var(--color-stone-800);
+}
